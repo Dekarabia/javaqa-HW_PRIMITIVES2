@@ -3,19 +3,18 @@
 public class Main {
     public static void main(String[] args) {
         int initialBalance = 250;
-        int replenishment = 1100;
-        int bonus = 100;
+        int replenishment = 2000;
+        int score = initialBalance + replenishment;
 
-        int bonusRubles;
-        if (replenishment >= 1000) {
-            bonusRubles = 1;
+        int bonusBalance;
+        if (score > 1000) {
+            bonusBalance = score / 100;
         } else {
-            bonusRubles = 0;
+            bonusBalance = 0;
         }
 
-        int score = replenishment / bonus;
-        System.out.println("Бонусный баланс составит " + score + " рублей " + "при пополнении баланса на сумму более 1000р");
-
+        int bonusRuble = score / bonusBalance;
+        System.out.println("Бонусный баланс составит " + bonusRuble + " рубля " + "при пополнении баланса на сумму более 1000р");
 
     }
 
