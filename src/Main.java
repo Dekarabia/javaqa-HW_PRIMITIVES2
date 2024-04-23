@@ -7,16 +7,16 @@ public class Main {
         int bonus = 100;
 
         int bonusRubles;
-        if (replenishment >=1000) {
+        if (replenishment >= 1000) {
             bonusRubles = 1;
         } else {
             bonusRubles = 0;
         }
 
         int score = replenishment / bonus;
-        System.out.println ("Бонусный баланс составит " + score + " рублей " + "при пополнении баланса на сумму более 1000р");
+        System.out.println("Бонусный баланс составит " + score + " рублей " + "при пополнении баланса на сумму более 1000р");
 
 
     }
 
-    }
+}
